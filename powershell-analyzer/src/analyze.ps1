@@ -223,6 +223,8 @@ function Invoke-PopulateRulesArray {
     }
 }
 
+Write-Host "This should warn me!"
+
 Write-Output "Begin analyzing all PowerShell files in the specified directory tree..."
 
 $sarif = Get-SarifContainer
