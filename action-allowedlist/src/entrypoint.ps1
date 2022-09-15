@@ -11,6 +11,9 @@ $jsonObject = ($unapproved | ConvertTo-Json)
 $jsonObject | out-file ./actions.json
 Write-Output "::set-output name=actions::'$jsonObject'"
 
+$NotUsed = 1
+Write-Output "Should only get warning about variable"
+
 if ($unapproved.Count -gt 0) {
     Write-Error "Repo contains unapproved actions!"
     exit 1
