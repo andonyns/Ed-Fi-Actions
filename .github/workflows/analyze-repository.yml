@@ -15,4 +15,4 @@ on:
 jobs:
   analyze:
     name: Linter
-    uses: andonyns/ed-fi-actions/.github/workflows/powershell-analyzer.yml@4dc88b83c7e35fbcdc95b3b8c7449c259e4eac21
+    uses: andonyns/ed-fi-actions/.github/workflows/powershell-analyzer.yml@c73bf46b7ff56b1f02b6d872a4c73fdfa90e5a46
