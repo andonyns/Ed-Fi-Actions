@@ -51,6 +51,9 @@ function GetAllUsedActions {
         [string] $RepoPath = "/github/workspace"
     )
 
+    $NotUsed = 2
+    Write-Output "Should warn about this only"
+
     # get all the actions from the repo
     if (Test-Path -Path "$($RepoPath)/.github/workflows") {
         $workflowFiles = Get-ChildItem "$($RepoPath)/.github/workflows" | Where {$_.Name.EndsWith(".yml")}
