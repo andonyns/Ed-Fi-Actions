@@ -25,6 +25,7 @@ on:
 
 jobs:
   action-allowedlist:
+    name: Allowed List
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Actions repo
@@ -43,6 +44,7 @@ jobs:
         id: scan-action
 
   bidi-scanner:
+    name: Scanner
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Actions repo
